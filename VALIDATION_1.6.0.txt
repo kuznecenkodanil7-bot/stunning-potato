@@ -1,0 +1,15 @@
+RM Tools 1.6.0 validation
+=========================
+
+- Java sources: 43 files.
+- Java 21 static compilation against Minecraft/Fabric API stubs: passed.
+- Resource JSON parsing: passed.
+- HQ icons: 33 PNG files, each 2048x2048.
+- RM logo: transparent PNG, 2048x1706, tightly cropped for HUD rendering.
+- New baked font atlases: 10 PNG/JSON pairs.
+- Raw TTF/OTF files included: 0.
+- Forbidden-word config location: config/rm_tools/forbidden_words.json.
+- Replacement archive retains repository-relative paths.
+
+The final Fabric Loom compilation is performed by GitHub Actions against
+Minecraft 1.21.11/Yarn mappings.

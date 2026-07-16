@@ -1,0 +1,13 @@
+RM Tools 1.2.0 validation
+=========================
+
+Checked locally:
+- JSON files parse successfully.
+- Uploaded RM logo is present as 1024x1024 RGBA mod icon.
+- Cropped HUD logo is present as 720x610 RGBA with transparency.
+- Java source has no parser/syntax diagnostics when checked with Java 21; unresolved symbols are expected without Minecraft/Fabric dependencies.
+- No legacy 1.21.10 input signatures remain.
+- GitHub Actions workflow uses Java 21 and Gradle 8.14.3.
+- Project archive structure contains src/, build.gradle, gradle.properties and .github/workflows/main.yml.
+
+Final dependency compilation must run in GitHub Actions because the local environment does not contain Fabric/Minecraft Maven artifacts.

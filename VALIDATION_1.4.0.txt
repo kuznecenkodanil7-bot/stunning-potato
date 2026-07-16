@@ -1,0 +1,28 @@
+RM Tools 1.4.0 — validation report
+===================================
+
+Target:
+- Minecraft 1.21.11
+- Fabric Loader 0.16.14
+- Yarn mappings 1.21.11+build.1
+- Java 21
+
+Checks completed:
+1. All Java source files compile with javac --release 21 against a controlled set of Minecraft/Fabric 1.21.11 API stubs.
+2. JSON syntax validated:
+   - fabric.mod.json (with version expansion)
+   - raidmine_staff.mixins.json
+   - ru_ru.json
+   - config-example.json
+3. Mixin list contains every new client mixin, including ClientPlayNetworkHandlerMixin.
+4. Login, settings, HUD editor and welcome-screen render paths were smoke-tested against the controlled API environment.
+5. Nickname resolution was tested with timestamps, prefixes, mentions, SmartChat-like formatting and service messages.
+6. Daily counters, manual punishment tracking, vanish toggling and /hub pause logic were smoke-tested.
+7. Logo files are transparent RGBA images at 4096×3370.
+8. No font files are included; the UI atlas is generated at runtime.
+9. ZIP integrity is checked after packaging.
+
+Important:
+A real Fabric Loom build cannot be executed in this offline container because the Minecraft/Fabric Maven dependencies are not present. The definitive build remains the GitHub Actions command:
+
+gradle --no-daemon clean build

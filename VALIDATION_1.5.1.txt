@@ -1,0 +1,20 @@
+RM Tools 1.5.1 validation
+==========================
+
+Validated locally:
+- 43 Java source files passed javac syntax parsing (dependency resolution unavailable locally).
+- All JSON files parsed successfully.
+- 33 high-resolution UI icon textures are 1024x1024.
+- RM logo is 1024x1024 with alpha.
+- Hemico, Etude Noire and Seenonim are bundled only as baked PNG glyph atlases + JSON metadata.
+- No TTF or OTF files are present in the project or distribution archives.
+- UI background opacity is normalized from 0.0 to 1.0.
+- UI and HUD outline opacity are stored separately.
+- HUD outline defaults to disabled.
+- AFK hub threshold is fixed at 240 seconds; online timer pauses after 60 seconds idle.
+- Screenshot queue invalidates stale chat frames and waits for a newly rendered chat frame.
+- MouseMixin and DrawContextMixin are registered for SmartChat click/hover tracking.
+
+Not performed locally:
+- Full Fabric Loom compilation, because Gradle/Minecraft dependencies are unavailable in this runtime.
+- Final runtime check must be performed by the included GitHub Actions workflow.

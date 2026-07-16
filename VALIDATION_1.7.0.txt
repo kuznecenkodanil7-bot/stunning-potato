@@ -1,0 +1,9 @@
+RM Tools 1.7.0 validation notes
+- Java source parsing: no syntax-pattern errors detected by javac parse pass.
+- Internal dev.raidmine.stafftool imports: all targets present.
+- fabric.mod.json and mixin JSON: validated.
+- All referenced mixin classes are present.
+- No TTF/OTF files are included; fonts are baked PNG/JSON atlases.
+- Logo levels: 128, 256, 512, 1024, 2048.
+- Icons use multiresolution HQ variants and linear filtering.
+- Full Fabric Loom compilation must be completed by GitHub Actions.
