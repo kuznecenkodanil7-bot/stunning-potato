@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "dev.raidmine.stafftool.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatHudMixin",
+    "ChatHudAccessor",
+    "ChatScreenMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "DrawContextMixin",
+    "InGameHudMixin",
+    "KeyboardMixin",
+    "MinecraftClientMixin",
+    "MouseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

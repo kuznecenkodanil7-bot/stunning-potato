@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "raidmine_staff",
+  "version": "${version}",
+  "name": "RM Tools",
+  "description": "Modern moderation toolkit, chat alerts and configurable HUD for RaidMine staff.",
+  "authors": ["RM Tools contributors"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/raidmine_staff/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.raidmine.stafftool.RaidMineStaffMod"
+    ]
+  },
+  "mixins": [
+    "raidmine_staff.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
